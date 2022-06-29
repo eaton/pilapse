@@ -9,11 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hapi/boom": "^10.0.0",
+    "@hapi/bounce": "^3.0.0",
+    "@hapi/call": "^9.0.0",
     "@hapi/hapi": "^20.2.2",
     "@hapi/inert": "^6.0.5",
+    "@hapi/log": "^1.0.0",
+    "@hapi/vision": "^6.1.0",
     "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^10.1.0",
     "node-libcamera": "^1.0.6",
-    "spi-device": "^3.1.2"
+    "rpio": "^2.4.2"
   }
 }

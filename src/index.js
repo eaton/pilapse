@@ -15,13 +15,7 @@ const init = async () => {
         method: 'GET',
         path: '/',
         handler: (request, h) => {
-            libcamera.still({ output: '~/test.jpg' })
-                .then((result) => {
-                    return h.file('~/test.jpg');
-                })
-                .catch((error) => {
-                    return JSON.stringify(error)
-                })
+            return '<h1>hello world!</h1>'
         }
     });
     await server.start();
