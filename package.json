@@ -18,6 +18,7 @@
     "@hapi/vision": "^6.1.0",
     "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^10.1.0",
+    "nanoid": "^4.0.0",
     "node-libcamera": "^1.0.6",
     "rpio": "^2.4.2"
   }
