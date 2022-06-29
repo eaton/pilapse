@@ -1,0 +1,19 @@
+{
+  "name": "pilapse",
+  "version": "1.0.0",
+  "description": "Remote camera control for the Raspberry Pi",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "@hapi/inert": "^6.0.5",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^10.1.0",
+    "node-libcamera": "^1.0.6",
+    "spi-device": "^3.1.2"
+  }
+}
