@@ -40,7 +40,6 @@ const init = async () => {
             if (!fs.pathExistsSync(path)) {
                 libcamera.jpeg({ output: 'preview.jpg' })
                     .then((result) => { return h.file('preview.jpg') })
-                    .catch(error => error)
             } else {
                 return h.file('preview.jpg');
             }
