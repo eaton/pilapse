@@ -38,9 +38,9 @@ const init = async () => {
         handler: (request, h) => {
             let path = Path.join(__dirname, 'preview.jpg')
             if (!fs.pathExistsSync(path)) {
-                libcamera.jpeg({ }).then(() => {
-                    return h.file('preview.jpg');
-                })
+                libcamera.jpeg({ output: 'preview.jpg' })
+                    .then((result) => { return h.file('preview.jpg') })
+                    .catch(error => error)
             } else {
                 return h.file('preview.jpg');
             }
